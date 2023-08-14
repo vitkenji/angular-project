@@ -12,6 +12,8 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { NewMomentComponent } from './components/pages/new-moment/new-moment.component';
 import { FormComponent } from './components/form/form.component';
 import { RecursiveAstVisitor } from '@angular/compiler';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MessagesComponent } from './components/messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { RecursiveAstVisitor } from '@angular/compiler';
     AboutComponent,
     NewMomentComponent,
     FormComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { RecursiveAstVisitor } from '@angular/compiler';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
   ],
 
   providers: [],
