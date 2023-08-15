@@ -13,6 +13,17 @@ export class HomeComponent {
   allMoments: Moment[] = [];
   moments: Moment[] = [];
   baseApiUrl = environment.baseApiUrl;
+  faSearch = faSearch;
+  searchTerm: string = '';
+
+  search(event: Event): void {
+    const target = event.target as HTMLInputElement;
+    const value = target.value;
+
+    this.moments = this.allMoments.filter((moment) => {
+      return moment.title.toLocaleLowerCase().includes(value);
+    });
+  }
 
   constructor(private momentService: MomentService) {}
 

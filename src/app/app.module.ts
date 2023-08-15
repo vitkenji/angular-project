@@ -14,6 +14,8 @@ import { FormComponent } from './components/form/form.component';
 import { RecursiveAstVisitor } from '@angular/compiler';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MessagesComponent } from './components/messages/messages.component';
+import { MomentComponent } from './components/pages/moment/moment.component';
+import { EditComponent } from './components/pages/edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { MessagesComponent } from './components/messages/messages.component';
     NewMomentComponent,
     FormComponent,
     MessagesComponent,
+    MomentComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,
